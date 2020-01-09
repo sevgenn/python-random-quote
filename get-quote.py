@@ -8,8 +8,10 @@ def primary():
     f.close()
 
     last = len(quotes) - 1
-    rnd = random.randint(0, last)
-    print(quotes[rnd])
+    rnd1 = random.randint(0, last)
+    rnd2 = random.randint(0, last)
+    print(quotes[rnd1].rstrip())
+    print(quotes[rnd2].rstrip())
 
 if __name__== "__main__":
     primary()
